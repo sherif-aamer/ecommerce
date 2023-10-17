@@ -96,3 +96,97 @@ body{
     margin-left: 15px;
 }
 
+/*carousel*/
+
+#carousel-featured{
+    background-color: #f7f8f3;
+    height: 400px;
+    padding-top: 25px;
+}
+
+#carousel-featured .carousel-item img{
+    height: 375px;
+}
+#carousel-featured .product-detail {
+    border: 1px solid #dddddb;
+    padding: 20px;
+    position: relative;
+    top: 50px;
+    height: 200px;
+    background-color:#f7f8f3 ;
+}
+#carousel-featured .product-detail .product-category{
+    border: 1px solid #dddddb;
+    pad: 10px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background-color: #f7f8f3;
+}
+
+#carousel-featured .product-detail h1 {
+    font-weight: 700;
+    font-size: 175%;
+    margin-top: 18px;
+}
+.custom-btn-outline-warning {
+    background-color: transparent;
+    border-color: #f8ad47;
+    color: #f8ad47 ;
+}
+
+.custom-btn-outline-warning:hover,
+.custom-btn-outline-warning:focus,
+.custom-btn-outline-warning:active,
+.custom-btn-outline-warning:active:focus,
+.custom-btn-outline-warning:active:hover {
+    border-color: #b86d07;
+    color: #b86d07;
+}
+.sale {
+    background-color: #53ccd7;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+}
+.sale.large{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    right: -15px;
+    top: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90%;
+    padding:35px ;
+    line-height: 90%;
+    flex-direction: column;
+    transform: rotate(25deg);
+}
+.sale.large span {
+    font-size: 10px;
+}
+
+
+.castum-carousel-indecator{
+    top: 235px;
+    left: 41%;
+}
+.castum-carousel-indecator-primary {
+    height: 70px !important;
+    width: 70px !important;
+    opacity: 1 !important;
+    border: 2px solid #dddddb !important;
+    margin: 0 !important;
+    margin-right: 5px;
+}
+.castum-carousel-indecator-primary.active {
+    border-color: #f8ad47 !important;
+}
+
+#carousel-featured .carousel-control-prev .fa-chevron-left,
+#carousel-featured .carousel-control-next .fa-chevron-right {
+    color: #868686;
+    font-size: 38px;
+}
