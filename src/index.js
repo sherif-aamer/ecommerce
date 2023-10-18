@@ -3,6 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/style.css';
 import '@fortawesome/fontawesome-free/js/all.min';
 
+document.querySelectorAll('.add-to-cart-btn').forEach(item => 
+{
+    item.addEventListener("click" , () => 
+    {
+        alert("The product has been added to the shopping cart")
+    })
+})
+
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
