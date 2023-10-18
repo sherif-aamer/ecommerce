@@ -211,3 +211,35 @@ body{
 #stor-features .feature+.feature{
     border-left: 1px solid #eef0ea;
 } 
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.card {
+    border: 2px solid #eef0ea;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.card:hover{
+    border-color: #53ccd7;
+}
+
+.card h5 {
+    font-size: 18px;
+}
+.price{
+    color: #53ccd7;
+}
+
+.rating {
+    color: #c2c2c2;
+
+}
+.rating .active {
+   color: #f3af41; 
+}
+
+li::marker{font-size:0;}
