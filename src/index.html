@@ -1,869 +1,1130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ecommerce</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ecommerce</title>
 </head>
+
 <body>
-    <div class="container-fluid">
-        <!-- navbar -->
-        <div class="row">
-            <div class="navbar custom-navbar navbar-expand-lg">
-                <div class="container px-0">
-                    <div class="navbar-header">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="#navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                        <a href="#" class="me-5">
-                            <img src="../src/images/logo.png" alt="ecommerce">
-                        </a>
-                    </div>
-                    <form class="d-flex">
-                        <input type="search" class="form-control custom-form-control" placeholder="search">
-                        <div class="dropdown">
-                            <a class="btn dropdown-toggle custom-btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               Category
-                              </a>
-                            <ul class="dropdown-menu custom-dropdown-menu">
-                                <li>
-                                    <div class="checkbox ms-2">
-                                        <label>
-                                            <input type="checkbox" name="search-category" value="men">
-                                            men
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox ms-2">
-                                        <label>
-                                            <input type="checkbox" name="search-category" value="women">
-                                            women
-                                        </label>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="checkbox ms-2">
-                                        <label>
-                                            <input type="checkbox" name="search-category" value="kids">
-                                            kids
-                                        </label>
-                                    </div>
-                                </li>
-                              </ul>
-                        </div>
-                        <button class="btn search-btn" type="submit">Search</button>
-                    </form>
-                    <div class="collapse navbar-collapse" id="navbar-collapse">
-                        <ul class="navbar-nav ms-auto">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                          </li>
-                          <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbardropdown2">
-                              Category
-                            </a>
-                            <ul class="dropdown-menu custom-dropdown-menu">
-                              <li><a class="dropdown-item" href="#">Women</a></li>
-                              <li><a class="dropdown-item" href="#">Men</a></li>
-                              <li><a class="dropdown-item" href="#">Kids</a></li>
-                            </ul>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">search</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">contact us</a>
-                          </li>
-                          <li class="mt-2">
-                            <a  class="btn-icon btn" id="btn-shopping-cart" href="#" title="shopping cart" data-bs-toggle="tooltip" data-bs-placement="bottom">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                </div>
+  <div class="container-fluid">
+    <!-- navbar -->
+    <div class="row">
+      <div class="navbar custom-navbar navbar-expand-lg">
+        <div class="container px-0">
+          <div class="navbar-header">
+            <button class="navbar-toggler btn custom-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbar-collapse" aria-controls="#navbar-collapse" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <i class="fas fa-bars fa-xl"></i>
+            </button>
+            <a class="btn-icon btn d-lg-none" href="./checkout.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a href="#" class="me-5 logo">
+              <img src="../src/images/logo.png" alt="ecommerce">
+            </a>
+          </div>
+          <form class="d-flex inline-form">
+            <input type="search" class="form-control custom-form-control" placeholder="search">
+            <div class="dropdown">
+              <a class="btn dropdown-toggle custom-btn" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Category
+              </a>
+              <ul class="dropdown-menu custom-dropdown-menu">
+                <li>
+                  <div class="checkbox ms-2">
+                    <label>
+                      <input type="checkbox" name="search-category" value="men">
+                      men
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox ms-2">
+                    <label>
+                      <input type="checkbox" name="search-category" value="women">
+                      women
+                    </label>
+                  </div>
+                </li>
+                <li>
+                  <div class="checkbox ms-2">
+                    <label>
+                      <input type="checkbox" name="search-category" value="kids">
+                      kids
+                    </label>
+                  </div>
+                </li>
+              </ul>
             </div>
+            <button class="btn search-btn" type="submit">Search</button>
+          </form>
+          <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false" id="navbardropdown2">
+                  Category
+                </a>
+                <ul class="dropdown-menu custom-dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Women</a></li>
+                  <li><a class="dropdown-item" href="#">Men</a></li>
+                  <li><a class="dropdown-item" href="#">Kids</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">search</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact us</a>
+              </li>
+              <li class="mt-2">
+              </li>
+            </ul>
+            <a class="btn-icon btn d-none d-lg-block" href="./checkout.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
         </div>
-            <!-- navbar end -->
-            <!-- featured-products -->
-            <div class="row">
-              <div id="carousel-featured"  class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators castum-carousel-indecator ">
-                  <img src="./images/lacoste_1.png" class="active castum-carousel-indecator-primary" data-bs-target="#carousel-featured" data-bs-slide-to="0" alt="lacoste-tshirt">
-                  <img src="./images/lacoste_2.png" data-bs-target="#carousel-featured" class="castum-carousel-indecator-primary"  data-bs-slide-to="1" alt="lacoste-bag">
-                  <img src="./images/lacoste_3.png" data-bs-target="#carousel-featured" class="castum-carousel-indecator-primary" data-bs-slide-to="2" alt="lacoste-tshirt1">
-                  <img src="./images/adidas_3.png" data-bs-target="#carousel-featured" class="castum-carousel-indecator-primary" data-bs-slide-to="3" alt="adidas">
+      </div>
+    </div>
+    <!-- navbar end -->
+    <!-- featured-products -->
+    <div class="row">
+      <div id="carousel-featured" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators custom-carousel-indecator d-none d-md-block">
+          <img src="./images/lacoste_1.png" data-bs-target="#carousel-featured"
+            class="custom-carousel-indicator-primary active" data-bs-slide-to="0" alt="lacoste-tshirt">
+          <img src="./images/lacoste_2.png" data-bs-target="#carousel-featured"
+            class="custom-carousel-indicator-primary" data-bs-slide-to="1" alt="lacoste-bag">
+          <img src="./images/lacoste_3.png" data-bs-target="#carousel-featured"
+            class="custom-carousel-indicator-primary" data-bs-slide-to="2" alt="lacoste-tshirt1">
+          <img src="./images/adidas_3.png" data-bs-target="#carousel-featured" class="custom-carousel-indicator-primary"
+            data-bs-slide-to="3" alt="adidas">
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 offset-lg-2 text-center">
+                  <img src="./images/lacoste_1.png" alt="lacoste-tshirt">
                 </div>
+                <div class="col-md-8 col-lg-6">
+                  <div class="product-detail">
+                    <div class="product-category">
+                      Discount
+                    </div>
+                    <div class="sale large">
+                      50%
+                      <span>dicount</span>
+                    </div>
+                    <h1>
+                      lacoste T-shirt for men
+                    </h1>
+                    <a href="product.html" class="btn btn-lg custom-btn-outline-warning mt-3">shopping now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 offset-lg-2 text-center">
+                  <img src="./images/lacoste_2.png" alt="lacoste-bag">
+                </div>
+                <div class="col-md-8 col-lg-6">
+                  <div class="product-detail">
+                    <div class="product-category">
+                      Most famous
+                    </div>
+                    <h1>
+                      lacoste bag for women
+                    </h1>
+                    <a href="product.html" class="btn btn-lg custom-btn-outline-warning mt-3">shopping now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 offset-lg-2 text-center">
+                  <img src="./images/lacoste_3.png" alt="lacoste-tshirt1">
+                </div>
+                <div class="col-md-8 col-lg-6">
+                  <div class="product-detail">
+                    <div class="product-category">
+                      Best selling
+                    </div>
+                    <h1>
+                      lacoste T-shirt for men
+                    </h1>
+                    <a href="product.html" class="btn btn-lg custom-btn-outline-warning mt-3">shopping now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 offset-lg-2 text-center">
+                  <img src="./images/adidas_3.png" alt="adidas">
+                </div>
+                <div class="col-md-8 col-lg-6">
+                  <div class="product-detail">
+                    <div class="product-category">
+                      Best selling
+                    </div>
+                    <h1>
+                      adidas for men
+                    </h1>
+                    <a href="product.html" class="btn btn-lg custom-btn-outline-warning mt-3">shopping now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#carousel-featured" data-bs-slide="prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#carousel-featured" data-bs-slide="next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+    <!-- featured-products-end -->
+    <!-- options -->
+    <div class="container">
+      <div class="row">
+        <div id="stor-features" class="col-lg-6 col-md-8 offset-md-2 offset-lg-3">
+          <h3 class="text-center heading">
+            Store features
+          </h3>
+          <div class="row">
+            <div class="col-4 text-center feature">
+              <img src="./images/feature_1.png" alt="feature_1">
+              <div>
+                Dilevery for free!
+              </div>
+            </div>
+            <div class="col-4 text-center feature">
+              <img src="./images/feature_2.png" alt="feature_1">
+              <div>
+                Insurance for a year!
+              </div>
+            </div>
+            <div class="col-4 text-center feature">
+              <img src="./images/feature_3.png" alt="feature_1">
+              <div>
+                Returning the product!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end options -->
+    <!-- most selling  -->
+    <div class="container">
+      <div class="row">
+        <h3 class="heading text-center">
+          The most sold
+        </h3>
+        <div id="carousel-most-sold" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+          <ol class="carousel-indicators custom-carousel-indicators2">
+            <li data-bs-target="#carousle-most-sold" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carousle-most-sold" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousle-most-sold" data-bs-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-lg-3 col-md-4">
+                  <div class="card">
+                    <div class="overlay">
+                      <button class="btn add-to-cart-btn">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                    <img src="./images/most_sold_1.jpg">
+                    <div class="card-body p-2">
+                      <div class="clearfix">
+                        <h5 class="float-start">flowra</h5>
+                        <p class="price float-end">40$</p>
+                      </div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <div class="card">
+                    <div class="overlay">
+                      <button class="btn add-to-cart-btn">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                    <img src="./images/most_sold_2.jpg">
+                    <div class="card-body p-2">
+                      <div class="clearfix">
+                        <h5 class="float-start">Black T-shirt</h5>
+                        <p class="price float-end">45$</p>
+                      </div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <div class="card">
+                    <div class="sale">50%</div>
+                    <div class="overlay">
+                      <button class="btn add-to-cart-btn">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                    <img src="./images/most_sold_3.jpg">
+                    <div class="card-body p-2">
+                      <div class="clearfix">
+                        <h5 class="float-start"> jacket for men</h5>
+                        <p class="price float-end">110$</p>
+                      </div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                  <div class="card">
+                    <div class="overlay">
+                      <button class="btn add-to-cart-btn">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                    <img src="./images/lacoste_1.jpg">
+                    <div class="card-body p-2">
+                      <div class="clearfix">
+                        <h5 class="float-start">chemise</h5>
+                        <p class="price float-end">70$</p>
+                      </div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-3 col-md-4">
+                  <div class="card">
+                    <div class="overlay">
+                      <button class="btn add-to-cart-btn">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                    <img src="./images/most_sold_1.jpg">
+                    <div class="card-body p-2">
+                      <div class="clearfix">
+                        <h5 class="float-start">flowra T-shirt</h5>
+                        <p class="price float-end">50$</p>
+                      </div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <div class="card">
+                    <div class="overlay">
+                      <button class="btn add-to-cart-btn">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                    <img src="./images/most_sold_2.jpg">
+                    <div class="card-body p-2">
+                      <div class="clearfix">
+                        <h5 class="float-start">Black T-shirt</h5>
+                        <p class="price float-end">45$</p>
+                      </div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <div class="card">
+                    <div class="sale">50%</div>
+                    <div class="overlay">
+                      <button class="btn add-to-cart-btn">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                    <img src="./images/most_sold_3.jpg">
+                    <div class="card-body p-2">
+                      <div class="clearfix">
+                        <h5 class="float-start"> jacket for men</h5>
+                        <p class="price float-end">110$</p>
+                      </div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                  <div class="card">
+                    <div class="overlay">
+                      <button class="btn add-to-cart-btn">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                    <img src="./images/lacoste_1.jpg">
+                    <div class="card-body p-2">
+                      <div class="clearfix">
+                        <h5 class="float-start">chemise</h5>
+                        <p class="price float-end">70$</p>
+                      </div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-lg-3 col-md-4">
+                  <div class="card">
+                    <div class="overlay">
+                      <button class="btn add-to-cart-btn">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                    <img src="./images/most_sold_1.jpg">
+                    <div class="card-body p-2">
+                      <div class="clearfix">
+                        <h5 class="float-start">flowra T-shirt</h5>
+                        <p class="price float-end">50$</p>
+                      </div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <div class="card">
+                    <div class="overlay">
+                      <button class="btn add-to-cart-btn">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                    <img src="./images/most_sold_2.jpg">
+                    <div class="card-body p-2">
+                      <div class="clearfix">
+                        <h5 class="float-start">Black T-shirt</h5>
+                        <p class="price float-end">45$</p>
+                      </div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                  <div class="card">
+                    <div class="sale">50%</div>
+                    <div class="overlay">
+                      <button class="btn add-to-cart-btn">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                    <img src="./images/most_sold_3.jpg">
+                    <div class="card-body p-2">
+                      <div class="clearfix">
+                        <h5 class="float-start"> jacket for men</h5>
+                        <p class="price float-end">110$</p>
+                      </div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-4 d-none d-lg-block">
+                  <div class="card">
+                    <div class="overlay">
+                      <button class="btn add-to-cart-btn">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                    <img src="./images/lacoste_1.jpg">
+                    <div class="card-body p-2">
+                      <div class="clearfix">
+                        <h5 class="float-start">chemise</h5>
+                        <p class="price float-end">70$</p>
+                      </div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-solid fa-star active"></i>
+                        <i class="fa-regular fa-star"></i>
+                      </div>
+                      <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                        add to cart
+                        <i class="fas fa-cart-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="carousel-most-sold-alternative" class="carousel slide d-md-none d-block" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="overlay">
+                  <button class="btn add-to-cart-btn d-block d-lg-none">
+                    add to cart
+                    <i class="fas fa-cart-plus"></i>
+                  </button>
+                </div>
+                <img src="./images/most_sold_1.jpg">
+                <div class="card-body p-2">
+                  <div class="clearfix">
+                    <h5 class="float-start">flowra T-shirt</h5>
+                    <p class="price float-end">50$</p>
+                  </div>
+                  <div class="rating">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                    add to cart
+                    <i class="fas fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="overlay">
+                  <button class="btn add-to-cart-btn d-block d-lg-none">
+                    add to cart
+                    <i class="fas fa-cart-plus"></i>
+                  </button>
+                </div>
+                <img src="./images/most_sold_2.jpg">
+                <div class="card-body p-2">
+                  <div class="clearfix">
+                    <h5 class="float-start">flowra T-shirt</h5>
+                    <p class="price float-end">50$</p>
+                  </div>
+                  <div class="rating">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                    add to cart
+                    <i class="fas fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card">
+                <div class="overlay">
+                  <button class="btn add-to-cart-btn d-block d-lg-none">
+                    add to cart
+                    <i class="fas fa-cart-plus"></i>
+                  </button>
+                </div>
+                <img src="./images/most_sold_3.jpg">
+                <div class="card-body p-2">
+                  <div class="clearfix">
+                    <h5 class="float-start">flowra T-shirt</h5>
+                    <p class="price float-end">50$</p>
+                  </div>
+                  <div class="rating">
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-solid fa-star active"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <button class="btn add-to-cart-btn d-lg-none d-block mx-auto">
+                    add to cart
+                    <i class="fas fa-cart-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button class="btn arrow-btn" data-bs-target="#carousel-most-sold-alternative" data-bs-slide="prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="btn arrow-btn" data-bs-target="#carousel-most-sold-alternative" data-bs-slide="next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end most selling  -->
+    <!-- international brands  -->
+    <div id="row-brands">
+      <div class="container">
+        <h3 class="heading">
+          International Brands
+        </h3>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <div class="panel">
+              <div id="carousel-brand-adidas" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-4 offset-2">
-                          <img src="./images/lacoste_1.png" alt="lacoste-tshirt">
-                        </div>
-                        <div class="col-6">
-                          <div class="product-detail">
-                            <div class="product-category">
-                              Discount
-                            </div>
-                            <div class="sale large">
-                              50% 
-                              <span>dicount</span>
-                            </div>
-                            <h1>
-                              lacoste T-shirt for men
-                            </h1>
-                            <a href="product.html" class="btn btn-lg custom-btn-outline-warning mt-3" >shopping now</a>
+                    <div class="row">
+                      <div class="col-lg-4 text-center">
+                        <img src="./images/adidas_1.jpg" alt="lacoste" class="w-100 mb-2" height="145">
+                        <a href="product.html" class="btn custom-btn-outline-warning d-none d-lg-block">Browse the
+                          product</a>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="clearfix">
+                          <h4 class="float-start">
+                            T-shirt
+                          </h4>
+                          <div class="float-end price">
+                            90$
                           </div>
+                        </div>
+                        <p class="custom-text-muted">
+                          maximum performance during your sports exercises with this shirt that provides you with
+                          comfort
+                        </p>
+                        <div class="rating">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="d-lg-none">
+                          <a href="product.html" class="btn custom-btn-outline-warning w-100 mt-3">Browse the
+                            product</a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-4 offset-2">
-                          <img src="./images/lacoste_2.png" alt="lacoste-bag">
-                        </div>
-                        <div class="col-6">
-                          <div class="product-detail">
-                            <div class="product-category">
-                              Most famous
-                            </div>
-                            <h1>
-                              lacoste bag for women
-                            </h1>
-                            <a href="product.html" class="btn btn-lg custom-btn-outline-warning mt-3">shopping now</a>
+                    <div class="row">
+                      <div class="col-lg-4 text-center">
+                        <img src="./images/adidas_2.jpg" alt="lacoste" class="w-100 mb-2" height="145">
+                        <a href="product.html" class="btn custom-btn-outline-warning d-none d-lg-block">Browse the
+                          product</a>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="clearfix">
+                          <h4 class="float-start">
+                            shoes
+                          </h4>
+                          <div class="float-end price">
+                            105$
                           </div>
+                        </div>
+                        <p class="custom-text-muted">
+                          maximum performance during your sports exercises with this shirt that provides you with
+                          comfort
+                        </p>
+                        <div class="rating">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="d-lg-none">
+                          <a href="product.html" class="btn custom-btn-outline-warning w-100 mt-3">Browse the
+                            product</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-fix">
+                  <div class="float-start">
+                    <div class="d-inline">Brand</div>
+                    <img src="./images/adidas_small.png" alt="adidas">
+                  </div>
+                  <div class="float-end">
+                    <button class="btn arrow-btn" data-bs-target="#carousel-brand-adidas" data-bs-slide="prev">
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="btn arrow-btn" data-bs-target="#carousel-brand-adidas" data-bs-slide="next">
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="panel">
+              <div id="carousel-brand-adidas" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-lg-4 text-center">
+                        <img src="./images/adidas_1.jpg" alt="lacoste" class="w-100 mb-2" height="145">
+                        <a href="product.html" class="btn custom-btn-outline-warning d-none d-lg-block">Browse the
+                          product</a>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="clearfix">
+                          <h4 class="float-start">
+                            T-shirt
+                          </h4>
+                          <div class="float-end price">
+                            90$
+                          </div>
+                        </div>
+                        <p class="custom-text-muted">
+                          maximum performance during your sports exercises with this shirt that provides you with
+                          comfort
+                        </p>
+                        <div class="rating">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="d-lg-none">
+                          <a href="product.html" class="btn custom-btn-outline-warning w-100 mt-3">Browse the
+                            product</a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-4 offset-2">
-                          <img src="./images/lacoste_3.png" alt="lacoste-tshirt1">
-                        </div>
-                        <div class="col-6">
-                          <div class="product-detail">
-                            <div class="product-category">
-                              Best selling
-                            </div>
-                            <h1>
-                              lacoste T-shirt for men
-                            </h1>
-                            <a href="product.html" class="btn btn-lg custom-btn-outline-warning mt-3">shopping now</a>
+                    <div class="row">
+                      <div class="col-lg-4 text-center">
+                        <img src="./images/adidas_2.jpg" alt="lacoste" class="w-100 mb-2" height="145">
+                        <a href="product.html" class="btn custom-btn-outline-warning d-none d-lg-block">Browse the
+                          product</a>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="clearfix">
+                          <h4 class="float-start">
+                            shoes
+                          </h4>
+                          <div class="float-end price">
+                            105$
                           </div>
+                        </div>
+                        <p class="custom-text-muted">
+                          maximum performance during your sports exercises with this shirt that provides you with
+                          comfort
+                        </p>
+                        <div class="rating">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="d-lg-none">
+                          <a href="product.html" class="btn custom-btn-outline-warning w-100 mt-3">Browse the
+                            product</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="clear-fix">
+                  <div class="float-start">
+                    <div class="d-inline">Brand</div>
+                    <img src="./images/adidas_small.png" alt="adidas">
+                  </div>
+                  <div class="float-end">
+                    <button class="btn arrow-btn" data-bs-target="#carousel-brand-adidas" data-bs-slide="prev">
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="btn arrow-btn" data-bs-target="#carousel-brand-adidas" data-bs-slide="next">
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="panel">
+              <div id="carousel-brand-adidas" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-lg-4 text-center">
+                        <img src="./images/adidas_1.jpg" alt="lacoste" class="w-100 mb-2" height="145">
+                        <a href="product.html" class="btn custom-btn-outline-warning d-none d-lg-block">Browse the
+                          product</a>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="clearfix">
+                          <h4 class="float-start">
+                            T-shirt
+                          </h4>
+                          <div class="float-end price">
+                            90$
+                          </div>
+                        </div>
+                        <p class="custom-text-muted">
+                          maximum performance during your sports exercises with this shirt that provides you with
+                          comfort
+                        </p>
+                        <div class="rating">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="d-lg-none">
+                          <a href="product.html" class="btn custom-btn-outline-warning w-100 mt-3">Browse the
+                            product</a>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-4 offset-2">
-                          <img src="./images/adidas_3.png" alt="adidas">
-                        </div>
-                        <div class="col-6">
-                          <div class="product-detail">
-                            <div class="product-category">
-                              Best selling
-                            </div>
-                            <h1>
-                              adidas for men
-                            </h1>
-                            <a href="product.html" class="btn btn-lg custom-btn-outline-warning mt-3">shopping now</a>
+                    <div class="row">
+                      <div class="col-lg-4 text-center">
+                        <img src="./images/adidas_2.jpg" alt="lacoste" class="w-100 mb-2" height="145">
+                        <a href="product.html" class="btn custom-btn-outline-warning d-none d-lg-block">Browse the
+                          product</a>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="clearfix">
+                          <h4 class="float-start">
+                            shoes
+                          </h4>
+                          <div class="float-end price">
+                            105$
                           </div>
+                        </div>
+                        <p class="custom-text-muted">
+                          maximum performance during your sports exercises with this shirt that provides you with
+                          comfort
+                        </p>
+                        <div class="rating">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="d-lg-none">
+                          <a href="product.html" class="btn custom-btn-outline-warning w-100 mt-3">Browse the
+                            product</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <button class="carousel-control-prev" data-bs-target="#carousel-featured" data-bs-slide="prev">
-                  <i class="fa-solid fa-chevron-left"></i>
-                </button>
-                <button class="carousel-control-next" data-bs-target="#carousel-featured" data-bs-slide="next">
-                  <i class="fa-solid fa-chevron-right"></i>
-                </button>
-              </div>
-            </div>        
-            <!-- featured-products-end -->
-              <!-- options -->
-            <div class="container">
-              <div class="row">
-                <div id="stor-features" class="col-6 offset-3">
-                  <h3 class="text-center heading">
-                    Store features
-                  </h3>
-                  <div class="row">
-                    <div class="col-4 text-center feature">
-                      <img src="./images/feature_1.png" alt="feature_1">
-                      <div>
-                        Dilevery for free!
-                      </div>
-                    </div>
-                    <div class="col-4 text-center feature">
-                      <img src="./images/feature_2.png" alt="feature_1">
-                      <div>
-                        Insurance for a year!
-                      </div>
-                    </div>
-                    <div class="col-4 text-center feature">
-                      <img src="./images/feature_3.png" alt="feature_1">
-                      <div>
-                        Returning the product!
-                      </div>
-                    </div>
+                <div class="clear-fix">
+                  <div class="float-start">
+                    <div class="d-inline">Brand</div>
+                    <img src="./images/adidas_small.png" alt="adidas">
+                  </div>
+                  <div class="float-end">
+                    <button class="btn arrow-btn" data-bs-target="#carousel-brand-adidas" data-bs-slide="prev">
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="btn arrow-btn" data-bs-target="#carousel-brand-adidas" data-bs-slide="next">
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- end options -->
-            <!-- most selling  -->
-            <div class="container">
-              <div class="row">
-                <h3 class="heading text-center">
-                  The most sold
-                </h3>
-                <div id="carousel-most-sold" class="carousel slide" data-bs-ride="carousel">
-                  <ol class="carousel-indicators custom-carousel-indicators2">
-                    <li data-bs-target="#carousle-most-sold" data-bs-slide-to="0" class="active"></li>
-                    <li data-bs-target="#carousle-most-sold" data-bs-slide-to="1"></li>
-                    <li data-bs-target="#carousle-most-sold" data-bs-slide-to="2"></li>
-                  </ol>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="card">
-                            <div class="overlay">
-                              <button class="btn add-to-cart-btn">
-                                add to cart
-                                <i class="fas fa-cart-plus"></i>
-                              </button>
-                            </div>
-                            <img src="./images/most_sold_1.jpg">
-                            <div class="card-body p-2">
-                              <div class="clearfix">
-                                <h5 class="float-start">flowra T-shirt</h5>
-                                <p class="price float-end">50$</p>
-                              </div>
-                                <div class="rating">
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <div class="panel">
+              <div id="carousel-brand-adidas" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-lg-4 text-center">
+                        <img src="./images/adidas_1.jpg" alt="lacoste" class="w-100 mb-2" height="145">
+                        <a href="product.html" class="btn custom-btn-outline-warning d-none d-lg-block">Browse the
+                          product</a>
+                      </div>
+                      <div class="col-lg-8">
+                        <div class="clearfix">
+                          <h4 class="float-start">
+                            T-shirt
+                          </h4>
+                          <div class="float-end price">
+                            90$
                           </div>
                         </div>
-                        <div class="col-3">
-                          <div class="card">
-                            <div class="overlay">
-                              <button class="btn add-to-cart-btn">
-                                add to cart
-                                <i class="fas fa-cart-plus"></i>
-                              </button>
-                            </div>
-                            <img src="./images/most_sold_2.jpg">
-                            <div class="card-body p-2">
-                              <div class="clearfix">
-                                <h5 class="float-start">Black T-shirt</h5>
-                                <p class="price float-end">45$</p>
-                              </div>
-                                <div class="rating">
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                          </div>
+                        <p class="custom-text-muted">
+                          maximum performance during your sports exercises with this shirt that provides you with
+                          comfort
+                        </p>
+                        <div class="rating">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-regular fa-star"></i>
                         </div>
-                        <div class="col-3">
-                          <div class="card">
-                            <div class="sale">50%</div>
-                            <div class="overlay">
-                              <button class="btn add-to-cart-btn">
-                                add to cart
-                                <i class="fas fa-cart-plus"></i>
-                              </button>
-                            </div>
-                            <img src="./images/most_sold_3.jpg">
-                            <div class="card-body p-2">
-                              <div class="clearfix">
-                                <h5 class="float-start"> jacket for men</h5>
-                                <p class="price float-end">110$</p>
-                              </div>
-                                <div class="rating">
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="card">
-                            <div class="overlay">
-                              <button class="btn add-to-cart-btn">
-                                add to cart
-                                <i class="fas fa-cart-plus"></i>
-                              </button>
-                            </div>
-                            <img src="./images/lacoste_1.jpg">
-                            <div class="card-body p-2">
-                              <div class="clearfix">
-                                <h5 class="float-start">chemise</h5>
-                                <p class="price float-end">70$</p>
-                              </div>
-                                <div class="rating">
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                          </div>
+                        <div class="d-lg-none">
+                          <a href="product.html" class="btn custom-btn-outline-warning w-100 mt-3">Browse the
+                            product</a>
                         </div>
                       </div>
                     </div>
-                    <div class="carousel-item">
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="card">
-                            <div class="overlay">
-                              <button class="btn add-to-cart-btn">
-                                add to cart
-                                <i class="fas fa-cart-plus"></i>
-                              </button>
-                            </div>
-                            <img src="./images/most_sold_1.jpg">
-                            <div class="card-body p-2">
-                              <div class="clearfix">
-                                <h5 class="float-start">flowra T-shirt</h5>
-                                <p class="price float-end">50$</p>
-                              </div>
-                                <div class="rating">
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="card">
-                            <div class="overlay">
-                              <button class="btn add-to-cart-btn">
-                                add to cart
-                                <i class="fas fa-cart-plus"></i>
-                              </button>
-                            </div>
-                            <img src="./images/most_sold_2.jpg">
-                            <div class="card-body p-2">
-                              <div class="clearfix">
-                                <h5 class="float-start">Black T-shirt</h5>
-                                <p class="price float-end">45$</p>
-                              </div>
-                                <div class="rating">
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="card">
-                            <div class="sale">50%</div>
-                            <div class="overlay">
-                              <button class="btn add-to-cart-btn">
-                                add to cart
-                                <i class="fas fa-cart-plus"></i>
-                              </button>
-                            </div>
-                            <img src="./images/most_sold_3.jpg">
-                            <div class="card-body p-2">
-                              <div class="clearfix">
-                                <h5 class="float-start"> jacket for men</h5>
-                                <p class="price float-end">110$</p>
-                              </div>
-                                <div class="rating">
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="card">
-                            <div class="overlay">
-                              <button class="btn add-to-cart-btn">
-                                add to cart
-                                <i class="fas fa-cart-plus"></i>
-                              </button>
-                            </div>
-                            <img src="./images/lacoste_1.jpg">
-                            <div class="card-body p-2">
-                              <div class="clearfix">
-                                <h5 class="float-start">chemise</h5>
-                                <p class="price float-end">70$</p>
-                              </div>
-                                <div class="rating">
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-lg-4 text-center">
+                        <img src="./images/adidas_2.jpg" alt="lacoste" class="w-100 mb-2" height="145">
+                        <a href="product.html" class="btn custom-btn-outline-warning d-none d-lg-block">Browse the
+                          product</a>
                       </div>
-                    </div>
-                    <div class="carousel-item">
-                      <div class="row">
-                        <div class="col-3">
-                          <div class="card">
-                            <div class="overlay">
-                              <button class="btn add-to-cart-btn">
-                                add to cart
-                                <i class="fas fa-cart-plus"></i>
-                              </button>
-                            </div>
-                            <img src="./images/most_sold_1.jpg">
-                            <div class="card-body p-2">
-                              <div class="clearfix">
-                                <h5 class="float-start">flowra T-shirt</h5>
-                                <p class="price float-end">50$</p>
-                              </div>
-                                <div class="rating">
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
+                      <div class="col-lg-8">
+                        <div class="clearfix">
+                          <h4 class="float-start">
+                            shoes
+                          </h4>
+                          <div class="float-end price">
+                            105$
                           </div>
                         </div>
-                        <div class="col-3">
-                          <div class="card">
-                            <div class="overlay">
-                              <button class="btn add-to-cart-btn">
-                                add to cart
-                                <i class="fas fa-cart-plus"></i>
-                              </button>
-                            </div>
-                            <img src="./images/most_sold_2.jpg">
-                            <div class="card-body p-2">
-                              <div class="clearfix">
-                                <h5 class="float-start">Black T-shirt</h5>
-                                <p class="price float-end">45$</p>
-                              </div>
-                                <div class="rating">
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                          </div>
+                        <p class="custom-text-muted">
+                          maximum performance during your sports exercises with this shirt that provides you with
+                          comfort
+                        </p>
+                        <div class="rating">
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-solid fa-star active"></i>
+                          <i class="fa-regular fa-star"></i>
                         </div>
-                        <div class="col-3">
-                          <div class="card">
-                            <div class="sale">50%</div>
-                            <div class="overlay">
-                              <button class="btn add-to-cart-btn">
-                                add to cart
-                                <i class="fas fa-cart-plus"></i>
-                              </button>
-                            </div>
-                            <img src="./images/most_sold_3.jpg">
-                            <div class="card-body p-2">
-                              <div class="clearfix">
-                                <h5 class="float-start"> jacket for men</h5>
-                                <p class="price float-end">110$</p>
-                              </div>
-                                <div class="rating">
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-3">
-                          <div class="card">
-                            <div class="overlay">
-                              <button class="btn add-to-cart-btn">
-                                add to cart
-                                <i class="fas fa-cart-plus"></i>
-                              </button>
-                            </div>
-                            <img src="./images/lacoste_1.jpg">
-                            <div class="card-body p-2">
-                              <div class="clearfix">
-                                <h5 class="float-start">chemise</h5>
-                                <p class="price float-end">70$</p>
-                              </div>
-                                <div class="rating">
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-solid fa-star active"></i>
-                                  <i class="fa-regular fa-star"></i>
-                                </div>
-                            </div>
-                          </div>
+                        <div class="d-lg-none">
+                          <a href="product.html" class="btn custom-btn-outline-warning w-100 mt-3">Browse the
+                            product</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- end most selling  -->
-
-            <div id="row-brands">
-              <div class="container">
-                <h3 class="heading">
-                  International Brands
-                </h3>
-                <div class="row">
-                  <div class="col-6 mb-3">
-                    <div class="panel">
-                      <div id="carousel-brand-adidas" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div class="row">
-                              <div class="col-4">
-                                <img src="./images/adidas_1.jpg" alt="lacoste" class="w-100 mb-2" height="145">
-                                <a href="product.html" class="btn custom-btn-outline-warning d-block">Browse the product</a>
-                              </div>
-                              <div class="col-8">
-                                <div class="clearfix">
-                                  <h4 class="float-start">
-                                      T-shirt
-                                  </h4>
-                                  <div class="float-end price">
-                                    90$
-                                  </div>
-                                </div>
-                                <p class="custom-text-muted">
-                                  maximum performance during your sports exercises with this shirt that provides you with comfort
-                               </p>
-                               <div class="rating">
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-regular fa-star"></i>
-                               </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="row">
-                              <div class="col-4">
-                                <img src="./images/adidas_2.jpg" alt="lacoste" class="w-100 mb-2" height="145">
-                                <a href="product.html" class="btn custom-btn-outline-warning d-block">Browse the product</a>
-                              </div>
-                              <div class="col-8">
-                                <div class="clearfix">
-                                  <h4 class="float-start">
-                                      shoes
-                                  </h4>
-                                  <div class="float-end price">
-                                    105$
-                                  </div>
-                                </div>
-                                <p class="custom-text-muted">
-                                  maximum performance during your sports exercises with this shirt that provides you with comfort
-                               </p>
-                               <div class="rating">
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-regular fa-star"></i>
-                               </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="clear-fix">
-                          <div class="float-start">
-                            <div class="d-inline">Brand</div>
-                            <img src="./images/adidas_small.png" alt="adidas">
-                          </div>
-                            <div class="float-end">
-                              <button class="btn arrow-btn" data-bs-target="#carousel-brand-adidas" data-bs-slide="prev">
-                                <i class="fas fa-chevron-left"></i>
-                              </button>
-                              <button class="btn arrow-btn" data-bs-target="#carousel-brand-adidas" data-bs-slide="next">
-                                <i class="fas fa-chevron-right"></i>
-                              </button>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
+                <div class="clear-fix">
+                  <div class="float-start">
+                    <div class="d-inline">Brand</div>
+                    <img src="./images/adidas_small.png" alt="adidas">
                   </div>
-                  <div class="col-6 mb-3">
-                    <div class="panel">
-                      <div id="carousel-brand-lacoste" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div class="row">
-                              <div class="col-4">
-                                <img src="./images/lacoste_1.jpg" alt="lacoste" class="w-100 mb-2" height="145">
-                                <a href="product.html" class="btn custom-btn-outline-warning d-block">Browse the product</a>
-                              </div>
-                              <div class="col-8">
-                                <div class="clearfix">
-                                  <h4 class="float-start">
-                                      Chemise
-                                  </h4>
-                                  <div class="float-end price">
-                                    55$
-                                  </div>
-                                </div>
-                                <p class="custom-text-muted">
-                                  maximum performance during your sports exercises with this shirt that provides you with comfort
-                               </p>
-                               <div class="rating">
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-regular fa-star"></i>
-                               </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="row">
-                              <div class="col-4">
-                                <img src="./images/lacoste_2.jpg" alt="lacoste" class="w-100 mb-2" height="145">
-                                <a href="product.html" class="btn custom-btn-outline-warning d-block">Browse the product</a>
-                              </div>
-                              <div class="col-8">
-                                <div class="clearfix">
-                                  <h4 class="float-start">
-                                      Bag
-                                  </h4>
-                                  <div class="float-end price">
-                                    75$
-                                  </div>
-                                </div>
-                                <p class="custom-text-muted">
-                                  maximum performance during your sports exercises with this shirt that provides you with comfort
-                               </p>
-                               <div class="rating">
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-regular fa-star"></i>
-                               </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="clear-fix">
-                          <div class="float-start">
-                            <div class="d-inline">Brand</div>
-                            <img src="./images/lacoste_small.png" alt="lacoste">
-                          </div>
-                            <div class="float-end">
-                              <button class="btn arrow-btn" data-bs-target="#carousel-brand-lacoste" data-bs-slide="prev">
-                                <i class="fas fa-chevron-left"></i>
-                              </button>
-                              <button class="btn arrow-btn" data-bs-target="#carousel-brand-lacoste" data-bs-slide="next">
-                                <i class="fas fa-chevron-right"></i>
-                              </button>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 mb-3">
-                    <div class="panel">
-                      <div id="carousel-brand-puma" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div class="row">
-                              <div class="col-4">
-                                <img src="./images/puma_1.jpg" alt="lacoste" class="w-100 mb-2" height="145">
-                                <a href="product.html" class="btn custom-btn-outline-warning d-block">Browse the product</a>
-                              </div>
-                              <div class="col-8">
-                                <div class="clearfix">
-                                  <h4 class="float-start">
-                                    Shoes
-                                  </h4>
-                                  <div class="float-end price">
-                                    150$
-                                  </div>
-                                </div>
-                                <p class="custom-text-muted">
-                                  maximum performance during your sports exercises with this shirt that provides you with comfort
-                               </p>
-                               <div class="rating">
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-regular fa-star"></i>
-                               </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="row">
-                              <div class="col-4">
-                                <img src="./images/puma_2.jpg" alt="lacoste" class="w-100 mb-2" height="145">
-                                <a href="product.html" class="btn custom-btn-outline-warning d-block">Browse the product</a>
-                              </div>
-                              <div class="col-8">
-                                <div class="clearfix">
-                                  <h4 class="float-start">
-                                      Shoes
-                                  </h4>
-                                  <div class="float-end price">
-                                    170$
-                                  </div>
-                                </div>
-                                <p class="custom-text-muted">
-                                  maximum performance during your sports exercises with this shirt that provides you with comfort
-                               </p>
-                               <div class="rating">
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-regular fa-star"></i>
-                               </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="clear-fix">
-                          <div class="float-start">
-                            <div class="d-inline">Brand</div>
-                            <img src="./images/puma_small.png" alt="puma">
-                          </div>
-                            <div class="float-end">
-                              <button class="btn arrow-btn" data-bs-target="#carousel-brand-puma" data-bs-slide="prev">
-                                <i class="fas fa-chevron-left"></i>
-                              </button>
-                              <button class="btn arrow-btn" data-bs-target="#carousel-brand-puma" data-bs-slide="next">
-                                <i class="fas fa-chevron-right"></i>
-                              </button>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-6 mb-3">
-                    <div class="panel">
-                      <div id="carousel-brand-hm" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <div class="row">
-                              <div class="col-4">
-                                <img src="./images/hm_1.jpg" alt="lacoste" class="w-100 mb-2" height="145">
-                                <a href="product.html" class="btn custom-btn-outline-warning d-block">Browse the product</a>
-                              </div>
-                              <div class="col-8">
-                                <div class="clearfix">
-                                  <h4 class="float-start">
-                                      Jacket
-                                  </h4>
-                                  <div class="float-end price">
-                                    80$
-                                  </div>
-                                </div>
-                                <p class="custom-text-muted">
-                                  maximum performance during your sports exercises with this shirt that provides you with comfort
-                               </p>
-                               <div class="rating">
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-regular fa-star"></i>
-                               </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="carousel-item">
-                            <div class="row">
-                              <div class="col-4">
-                                <img src="./images/hm_2.jpg" alt="lacoste" class="w-100 mb-2" height="145">
-                                <a href="product.html" class="btn custom-btn-outline-warning d-block">Browse the product</a>
-                              </div>
-                              <div class="col-8">
-                                <div class="clearfix">
-                                  <h4 class="float-start">
-                                      Dress
-                                  </h4>
-                                  <div class="float-end price">
-                                    120$
-                                  </div>
-                                </div>
-                                <p class="custom-text-muted">
-                                  maximum performance during your sports exercises with this shirt that provides you with comfort
-                               </p>
-                               <div class="rating">
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-solid fa-star active"></i>
-                                 <i class="fa-regular fa-star"></i>
-                               </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="clear-fix">
-                          <div class="float-start">
-                            <div class="d-inline">Brand</div>
-                            <img src="./images/hm_small.png" alt="hm">
-                          </div>
-                            <div class="float-end">
-                              <button class="btn arrow-btn" data-bs-target="#carousel-brand-hm" data-bs-slide="prev">
-                                <i class="fas fa-chevron-left"></i>
-                              </button>
-                              <button class="btn arrow-btn" data-bs-target="#carousel-brand-hm" data-bs-slide="next">
-                                <i class="fas fa-chevron-right"></i>
-                              </button>
-                            </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="float-end">
+                    <button class="btn arrow-btn" data-bs-target="#carousel-brand-adidas" data-bs-slide="prev">
+                      <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="btn arrow-btn" data-bs-target="#carousel-brand-adidas" data-bs-slide="next">
+                      <i class="fas fa-chevron-right"></i>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
+          </div>>
+        </div>
+      </div>
     </div>
+    <!-- end internatinal brands  -->
+    <footer class="row">
+      <div id="brand-logos" class="text-center">
+        <span>The store is an authorized agent for major international companies</span>
+        <div class="img-container">
+          <img src="./images/adidas.png" alt="adidas">
+          <img src="./images/lacoste.png" alt="lacoste">
+          <img src="./images/puma.png" alt="puma">
+          <img src="./images/polo.png" alt="polo">
+        </div>
+      </div>
+      <div id="footer-nav" class="text-center">
+        <div class="footer-logo">
+          <a href="./">
+            <img src="./images/logo_footer.png" alt="logo">
+          </a>
+        </div>
+        <div class="footer-nav-links">
+          <a href="./index.html">Home</a>
+          <a href="search.html">Search</a>
+          <a href="contact.html">Contact us</a>
+        </div>
+        <div class="newsletter col-6 offset-3">
+          <form>
+            <label for="footer-input">follow the newsletter to the best offers</label>
+            <br>
+            <div class="input-group">
+              <input type="email" name="email" id="footer-input" class="form-control custom-form-control"
+                placeholder="email">
+              <button type="submit" class="btn custom-btn-warning">Follow</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div id="footer-copyright-social">
+        <div class="container">
+          <div class="clearfix">
+            <div id="copyright" class="float-start">
+
+            </div>
+            <div id="social-icons" class="float-end">
+              <a href="#">
+                <i class="fab fa-facebook-square fa-lg"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter-square fa-lg"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
-</html> 
+
+</html>

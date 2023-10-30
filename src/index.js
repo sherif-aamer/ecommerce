@@ -12,5 +12,27 @@ document.querySelectorAll('.add-to-cart-btn').forEach(item =>
 })
 
 
+
+document.querySelectorAll('.size-option input[type="radio"]').forEach(item => {
+    item.addEventListener('change', () => {
+        document.querySelectorAll('.size-option').forEach(i => {
+            i.classList.remove('active')
+        })
+        item.parentNode.parentNode.classList.add('active')
+    })
+})
+
+document.querySelectorAll('.color-option input[type="radio"]').forEach(item => {
+    item.addEventListener('change', () => {
+        document.querySelectorAll('.color-option').forEach(i => {
+            i.classList.remove('active')
+        })
+        item.parentNode.parentNode.classList.add('active')
+    })
+})
+
+document.getElementById("copyright").innerHTML ="All Rights Reserved " + new Date().getFullYear();
+
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
