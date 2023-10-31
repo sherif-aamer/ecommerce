@@ -69,7 +69,24 @@ document.querySelectorAll('[data-remove-from-card]').forEach(item => {
     })
 })
 
+// ......credit card
 
+document.querySelectorAll('#form-checkout input[name = "payment-method"]').forEach(item =>{
+    item.addEventListener('change',() => {
+        const paymentMethod = item.value;
+
+        const creditCardInputs = document.querySelectorAll('#credit-card-info input');
+        if(paymentMethod === 'on-delivery') {
+            creditCardInputs.forEach(input => {
+                input.style.display='none'
+            })
+        }else {
+            creditCardInputs.forEach(input => {
+                input.style.display='block'
+            })
+        }
+    })
+})
 
 
 document.getElementById("copyright").innerHTML ="All Rights Reserved " + new Date().getFullYear();
